@@ -1,12 +1,12 @@
-<<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyecto Final – Página de Inicio</title>
+    <title>Proyecto Final - Página de Inicio</title>
 
     <!-- CSS propio -->
-    <link rel="stylesheet" href="../html/index.html">
+    <link rel="stylesheet" href="../css/iniciostyle.css">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,42 +33,83 @@
     </div>
 </nav>
 
-<!-- CARRUSEL -->
-<div id="carouselExampleFade" class="carousel slide carousel-fade">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../imagenes/img1.png" class="d-block w-100 tamano" alt="Imagen 1">
-        </div>
-        <div class="carousel-item">
-            <img src="../imagenes/img2.jpg" class="d-block w-100 tamano" alt="Imagen 2">
-        </div>
-        <div class="carousel-item">
-            <img src="../imagenes/img3.png" class="d-block w-100 tamano" alt="Imagen 3">
-        </div>
+<!-- CARRUSEL INSTITUCIONAL -->
+<div id="carruselGandhy" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselGandhy" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carruselGandhy" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carruselGandhy" data-bs-slide-to="2"></button>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="../imagenes/img1.png" class="d-block w-100" alt="Colegio Gandhy - Imagen 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Colegio Gandhy</h5>
+                <p>Formación integral para un futuro brillante</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="../imagenes/img2.jpg" class="d-block w-100" alt="Colegio Gandhy - Imagen 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Excelencia Académica</h5>
+                <p>Educación con valores y calidad humana</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="../imagenes/img3.png" class="d-block w-100" alt="Colegio Gandhy - Imagen 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Compromiso Institucional</h5>
+                <p>Un espacio seguro para aprender y crecer</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselGandhy" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
     </button>
 
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselGandhy" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
     </button>
+
 </div>
 
-<!-- SECCIÓN 1 -->
+
+    
+
+<!-- MISIÓN Y VISIÓN -->
 <section class="container py-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Sección 1</h2>
-            <p>Texto descriptivo de ejemplo.</p>
+    <div class="row text-center">
+        <div class="col-md-6 mb-4">
+            <h2>Misión</h2>
+            <p>
+                El Colegio Gandhy tiene como misión formar estudiantes íntegros, capaces de desarrollar su potencial 
+                académico, humano y social mediante una educación basada en valores, pensamiento crítico y respeto 
+                por la diversidad. Promovemos un ambiente seguro, inclusivo y participativo donde cada estudiante 
+                construye aprendizajes significativos que fortalecen su proyecto de vida y su compromiso con la sociedad.
+            </p>
         </div>
-        <div class="col-md-6">
-            <img src="imagenes/img1.png" class="img-fluid rounded" alt="Imagen descriptiva">
+
+        <div class="col-md-6 mb-4">
+            <h2>Visión</h2>
+            <p>
+                Para el año 2030, el Colegio Gandhy será reconocido como una institución educativa líder en la región, 
+                destacada por su excelencia académica, su modelo pedagógico innovador y su compromiso con la formación 
+                de ciudadanos responsables, solidarios y preparados para enfrentar los retos del mundo actual. Aspiramos 
+                a consolidarnos como un referente en educación integral, tecnología educativa y desarrollo humano.
+            </p>
         </div>
     </div>
 </section>
 
+
+       
 <!-- SECCIÓN 2 -->
 <section class="container py-5">
     <div class="row">
