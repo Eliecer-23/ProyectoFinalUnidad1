@@ -39,102 +39,167 @@
     </div>
 </nav>
 
-<!-- SECCIÓN SOBRE NOSOTROS -->
+
+<!-- HISTORIA DEL COLEGIO GANDHY -->
 <section class="container py-5">
     <div class="row">
         <div class="col-md-6">
-            <h2>Sobre Nosotros</h2>
-            <p>Esta es una sección informativa con texto descriptivo para la página 2.</p>
+            <h2>Historia del Colegio Gandhy (2011–2026)</h2>
+            <p>
+                El Colegio Gandhy abrió sus puertas en el año 2011 con el propósito de ofrecer una educación integral 
+                basada en valores humanos, excelencia académica y formación ciudadana. Inició con un pequeño grupo de 
+                estudiantes y docentes comprometidos con transformar la educación en la región.
+            </p>
+            <p>
+                Entre 2014 y 2018, el colegio fortaleció su modelo pedagógico, incorporando nuevas metodologías activas, 
+                proyectos de investigación escolar y programas de acompañamiento emocional. Durante este periodo, la 
+                institución amplió su infraestructura y consolidó los niveles de preescolar y básica primaria.
+            </p>
+            <p>
+                Entre 2019 y 2022, el Colegio Gandhy avanzó en la integración de herramientas tecnológicas, implementando 
+                aulas digitales, plataformas educativas y estrategias de aprendizaje híbrido. Este proceso permitió mejorar 
+                la calidad educativa y ampliar la participación de estudiantes y familias.
+            </p>
+            <p>
+                Desde 2023 hasta 2026, la institución ha continuado su crecimiento, fortaleciendo la media académica, 
+                desarrollando proyectos comunitarios y posicionándose como un referente regional en formación integral, 
+                innovación pedagógica y convivencia escolar.
+            </p>
         </div>
+
         <div class="col-md-6">
-            <img src="../imagenes/img5.png" class="img-fluid rounded" alt="Imagen descriptiva">
+            <img src="../imagenes/img2.jpg" class="img-fluid rounded" alt="Historia del Colegio Gandhy">
         </div>
     </div>
 </section>
 
-<!-- TABLA -->
+
+
+<!-- NIVELES EDUCATIVOS -->
 <section class="container py-5">
-    <h2>Tabla de Información</h2>
+    <h2 class="text-center mb-4">Niveles Educativos del Colegio Gandhy</h2>
+
     <table class="table table-bordered table-striped">
         <thead class="table-dark">
             <tr>
-                <th>Nombre</th>
+                <th>Nivel</th>
                 <th>Edad</th>
-                <th>Ciudad</th>
+                <th>Descripción</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
-                <td>Ana</td>
-                <td>25</td>
-                <td>Bogotá</td>
+                <td>Preescolar</td>
+                <td>3 – 5 años</td>
+                <td>Desarrollo inicial, exploración, juego y fortalecimiento de habilidades básicas.</td>
             </tr>
+
             <tr>
-                <td>Pedro</td>
-                <td>30</td>
-                <td>Medellín</td>
+                <td>Básica Primaria</td>
+                <td>6 – 10 años</td>
+                <td>Fundamentos académicos, valores institucionales y competencias ciudadanas.</td>
             </tr>
+
             <tr>
-                <td>Laura</td>
-                <td>28</td>
-                <td>Cali</td>
+                <td>Básica Secundaria</td>
+                <td>11 – 14 años</td>
+                <td>Profundización en áreas del conocimiento y desarrollo del pensamiento crítico.</td>
+            </tr>
+
+            <tr>
+                <td>Media Académica</td>
+                <td>15 – 17 años</td>
+                <td>Preparación para la educación superior, orientación vocacional y proyectos de vida.</td>
             </tr>
         </tbody>
     </table>
 </section>
 
-<!-- FORMULARIO + LISTA -->
+
+<!-- CONTACTO Y SERVICIOS INSTITUCIONALES -->
 <section class="container py-5">
     <div class="row">
+
+        <!-- FORMULARIO DE CONTACTO -->
         <div class="col-md-6">
-            <h2>Formulario de Registro</h2>
+            <h2 class="mb-4">Contacto Institucional</h2>
             <form>
-                <input type="text" class="form-control mb-3" placeholder="Nombre completo">
-                <input type="email" class="form-control mb-3" placeholder="Correo electrónico">
-                <select class="form-control mb-3">
-                    <option>Seleccione una opción</option>
-                    <option>Opción 1</option>
-                    <option>Opción 2</option>
+                <input type="text" class="form-control mb-3" placeholder="Nombre completo" required>
+                <input type="email" class="form-control mb-3" placeholder="Correo electrónico" required>
+                <input type="tel" class="form-control mb-3" placeholder="Número de teléfono">
+
+                <select class="form-control mb-3" required>
+                    <option selected disabled>Motivo del contacto</option>
+                    <option>Información académica</option>
+                    <option>Proceso de admisión</option>
+                    <option>Servicios del colegio</option>
+                    <option>Atención a padres</option>
                 </select>
-                <button class="btn btn-success">Registrar</button>
+
+                <textarea class="form-control mb-3" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button class="btn btn-success w-100">Enviar mensaje</button>
             </form>
         </div>
 
+        <!-- SERVICIOS EDUCATIVOS -->
         <div class="col-md-6">
-            <h2>Lista de Servicios</h2>
-            <ol>
-                <li>Servicio 1</li>
-                <li>Servicio 2</li>
-                <li>Servicio 3</li>
+            <h2 class="mb-4">Servicios Educativos</h2>
+            <ol class="fs-5">
+                <li>Biblioteca escolar</li>
+                <li>Transporte institucional</li>
+                <li>Restaurante y refrigerios</li>
+                <li>Actividades extracurriculares</li>
+                <li>Acompañamiento psicológico y orientación escolar</li>
+                <li>Plataforma educativa virtual</li>
             </ol>
         </div>
 
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-4">
+
+<!-- FOOTER INSTITUCIONAL -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
     <div class="container">
         <div class="row">
 
-            <div class="col-md-4">
-                <h5>Creador</h5>
-                <p>Jorge – Proyecto Web</p>
+            <!-- Información del creador -->
+            <div class="col-md-4 mb-3">
+                <h5>Institución</h5>
+                <p>Colegio Gandhy<br>Formación integral con valores</p>
             </div>
 
-            <div class="col-md-4">
+            <!-- Redes sociales -->
+            <div class="col-md-4 mb-3">
                 <h5>Redes Sociales</h5>
-                <p>Facebook | Instagram | Twitter</p>
+                <p>
+                    <a href="#" class="text-white text-decoration-none">Facebook</a> |
+                    <a href="#" class="text-white text-decoration-none">Instagram</a> |
+                    <a href="#" class="text-white text-decoration-none">YouTube</a>
+                </p>
             </div>
 
-            <div class="col-md-4">
-                <h5>Links de interés</h5>
-                <p>Bootstrap | HTML | CSS</p>
+            <!-- Enlaces de interés -->
+            <div class="col-md-4 mb-3">
+                <h5>Contacto</h5>
+                <p>
+                    Tel: 316 555 55 39<br>
+                    Email: contacto@colegiogandhy.edu.co<br>
+                    Sabana de Torres – Santander
+                </p>
             </div>
 
         </div>
+
+        <hr class="border-light">
+
+        <p class="mb-0">© 2026 Colegio Gandhy – Proyecto Web desarrollado por Jorge Perez</p>
     </div>
 </footer>
+
+
 
 <!-- Bootstrap JS recomendado -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

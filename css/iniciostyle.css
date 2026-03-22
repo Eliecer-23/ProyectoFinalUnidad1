@@ -31,8 +31,9 @@ h2 {
 /* ======== CAROUSEL ======== */
 
 .carousel-item img {
-    height: 450px;
+    height: 1080px;
     object-fit: cover;
+    
 }
 
 /* ======== SECCIONES ======== */
