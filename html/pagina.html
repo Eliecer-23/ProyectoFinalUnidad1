@@ -1,55 +1,58 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>pagina 2</title>
-    <!-- css propio -->
-  <link rel="stylesheet" href="css/paginastyle.css">
+    <title>Página 2</title>
 
-  <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/paginastyle.css">
 
-     <!-- inicio navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+<body>
 
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
 
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="pagina.html">Página</a>
-        </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pagina.html">Página</a>
+                </li>
+
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
-    <!-- fin navbar -->
-
-    <section class="container py-5">
+<!-- SECCIÓN SOBRE NOSOTROS -->
+<section class="container py-5">
     <div class="row">
         <div class="col-md-6">
             <h2>Sobre Nosotros</h2>
             <p>Esta es una sección informativa con texto descriptivo para la página 2.</p>
         </div>
         <div class="col-md-6">
-            <img src="imagenes/img2.jpg" class="img-fluid rounded">
+            <img src="../imagenes/img5.png" class="img-fluid rounded" alt="Imagen descriptiva">
         </div>
     </div>
 </section>
 
+<!-- TABLA -->
 <section class="container py-5">
     <h2>Tabla de Información</h2>
     <table class="table table-bordered table-striped">
@@ -80,6 +83,7 @@
     </table>
 </section>
 
+<!-- FORMULARIO + LISTA -->
 <section class="container py-5">
     <div class="row">
         <div class="col-md-6">
@@ -104,36 +108,11 @@
                 <li>Servicio 3</li>
             </ol>
         </div>
+
     </div>
 </section>
 
-<section class="container py-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Formulario de Registro</h2>
-            <form>
-                <input type="text" class="form-control mb-3" placeholder="Nombre completo">
-                <input type="email" class="form-control mb-3" placeholder="Correo electrónico">
-                <select class="form-control mb-3">
-                    <option>Seleccione una opción</option>
-                    <option>Opción 1</option>
-                    <option>Opción 2</option>
-                </select>
-                <button class="btn btn-success">Registrar</button>
-            </form>
-        </div>
-
-        <div class="col-md-6">
-            <h2>Lista de Servicios</h2>
-            <ol>
-                <li>Servicio 1</li>
-                <li>Servicio 2</li>
-                <li>Servicio 3</li>
-            </ol>
-        </div>
-    </div>
-</section>
-
+<!-- FOOTER -->
 <footer class="bg-dark text-white text-center py-4">
     <div class="container">
         <div class="row">
@@ -157,9 +136,8 @@
     </div>
 </footer>
 
+<!-- Bootstrap JS recomendado -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
