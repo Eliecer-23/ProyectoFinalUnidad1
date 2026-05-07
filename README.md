@@ -1,58 +1,96 @@
-# 
----
-## 🌐 Descripción del Sitio Web
-El sitio está compuesto por dos páginas principales:
-### **1. Página de Inicio (index.html)**
-- Presentación institucional.
-- Video introductorio.
-- Lista de principios institucionales.
-- Diseño responsivo con Bootstrap.
-- Estilos personalizados en `iniciostyle.css`.
-### **2. Página 2 (pagina.html)**
-- Contenido complementario.
-- Secciones informativas.
-- Imágenes y recursos gráficos.
-- Estilos personalizados en `paginastyle.css`.
----
-## 🎨 Tecnologías Utilizadas
-- **HTML5** – Estructura del contenido.
-- **CSS3** – Estilos personalizados.
-- **Bootstrap 5.3** – Componentes y diseño responsivo.
-- **Git & GitHub** – Control de versiones y despliegue.
-- **VS Code** – Editor de desarrollo.
----
+# Proyecto Final - Colegio Gandhy
 
-## 📘 Documento de Análisis
+## Requisitos de Ejecución
 
-El proyecto documento  análisis requerido para la Unidad 1:
+### Frontend
+1. Abrir la carpeta `frontend/html/`
+2. Abrir `index.html` con Live Server en VS Code
 
-- `html/Documento_analisis.pdf`
+### Backend
+1. Tener instalado Node.js y MongoDB
+2. Entrar a la carpeta backend:
+cd backend
+
+3. Instalar dependencias:
+npm install
+
+4. Iniciar el servidor:
+node server.js
+
+
+5. El servidor corre en: `http://localhost:3000`
 
 ---
 
-## 🚀 Objetivo del Proyecto
+## Diccionario de Endpoints
 
-Aplicar los conocimientos adquiridos en la Unidad 1 del diplomado, desarrollando:
+### Auth
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| POST | /auth/login | Iniciar sesión |
 
-- Estructura semántica en HTML  
-- Estilos organizados en CSS  
-- Uso de componentes de Bootstrap  
-- Gestión del proyecto con Git y GitHub  
-- Organización profesional de archivos  
+### Usuarios
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | /usuarios | Obtener todos |
+| GET | /usuarios/:id | Obtener uno |
+| POST | /usuarios | Crear usuario |
+| PUT | /usuarios/:id | Actualizar usuario |
+| DELETE | /usuarios/:id | Eliminar usuario |
+
+### Servicios
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | /servicios | Obtener todos |
+| GET | /servicios/:id | Obtener uno |
+| POST | /servicios | Crear servicio |
+| PUT | /servicios/:id | Actualizar servicio |
+| DELETE | /servicios/:id | Eliminar servicio |
 
 ---
 
-## 👨‍💻 Autor
+## Ejemplos JSON
 
-**Jorge Eliecer Pérez**  
-Diplomado en Desarrollo Web – 2026 
-Facultad de Ciencias Empresariales  - Contaduria Publica - virtual
-ID: 100068159
-Repositorio: [ProyectoFinalUnidad1](https://github.com/Eliecer-23/ProyectoFinalUnidad1)
+### Crear usuario
+```json
+{
+    "nombre": "Jorge Perez",
+    "email": "admin@gandhy.edu.co",
+    "password": "1234",
+    "rol": "administrador"
+}
+```
+
+### Login
+```json
+{
+    "email": "admin@gandhy.edu.co",
+    "password": "1234"
+}
+```
+
+### Crear servicio
+```json
+{
+    "nombre": "Biblioteca escolar",
+    "descripcion": "Servicio de préstamo de libros",
+    "disponible": true
+}
+```
 
 ---
 
-## 📄 Licencia
+## Explicación del DOM
 
-Este proyecto es de uso académico y no está destinado a distribución comercial.
-ProyectoFinalUnidad1
+El frontend utiliza un único archivo `index.html` con cuatro vistas:
+- **Login**: pantalla inicial con validación de credenciales
+- **Inicio**: carrusel institucional, misión y visión
+- **Página**: historia, tabla de niveles y formulario de contacto
+- **Dashboard**: panel con estadísticas del colegio
+
+La navegación entre vistas se gestiona mediante la función `mostrarVista()` en `app.js`, que oculta todas las secciones con la clase `d-none` de Bootstrap y muestra únicamente la vista solicitada. No se recarga la página en ningún momento.
+
+---
+
+## Desarrollado por
+**Jorge Perez** - Proyecto Web 2026

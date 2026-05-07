@@ -1,0 +1,64 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======== LOGIN ======== */
+#vista-login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+.login-container p {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* ======== CARRUSEL ======== */
+.carousel-img {
+    height: 420px;
+    object-fit: cover;
+}
+
+/* ======== NAVBAR ======== */
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* ======== DASHBOARD CARDS ======== */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a1a2e;
+}
